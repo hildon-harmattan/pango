@@ -1,0 +1,942 @@
+commit 6054aeddf94d0fee1e9274510aa71c75d84c6f05
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon May 4 16:00:06 2009 -0400
+
+    [git.mk] Better deal with non-automake directories
+
+ git.mk |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 2dbd066cbab8b9bfcf967e9147415db4f5627ab5
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon May 4 14:16:25 2009 -0400
+
+    [git.mk] Update
+
+ git.mk |  157
+ ++++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 80 insertions(+), 77 deletions(-)
+
+commit 967e4eb92e3b7ce2bd92f18a84ecdc3f8bb39ed3
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sun May 3 20:29:17 2009 -0400
+
+    [git.mk] Fix DEST_SUBDIR recursion
+
+ git.mk |   15 ++++++++-------
+ 1 files changed, 8 insertions(+), 7 deletions(-)
+
+commit f7c76896afc0f34db01a039933ee64ddc23bc3ab
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sun May 3 20:25:33 2009 -0400
+
+    [git.mk] Recurse in DIST_SUBDIRS too
+
+ git.mk |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 2c9979d6a01b5fb4951f1413ad8468ed10415c64
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Fri May 1 14:05:31 2009 -0400
+
+    Bug 580987 – SIGFPE in pango_glyph_string_index_to_x
+
+    Be pedantic about broken cluster setup, avoid div-by-zero.
+
+ pango/glyphstring.c |    6 ++++++
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+
+commit 150573e610c0b14c34aba6fe17b1a6e36d282767
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Apr 27 14:24:24 2009 -0400
+
+    [doap] Add mailto:
+
+ pango.doap |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit c91e757da1835900b73dcde3128ea4f5a5290c59
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sun Apr 26 21:39:06 2009 -0400
+
+    Bug 580273 – Font metrics functions incorrectly listed as reporting
+    point sizes
+
+    [doc] Remove misleading sentence about points and Pango units
+
+ pango/fonts.c |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit ff7dc9ae5d9b1cc340c6859bd5f3aa3054b19bea
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sun Apr 26 02:22:14 2009 -0400
+
+    [git.mk] Also ignore other vim buffer files
+
+ git.mk |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 131f9b20f0d8748baf7e9bf27166c91ec8bad88f
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sat Apr 25 20:33:03 2009 -0400
+
+    Fix maintainer-clean
+
+ git.mk |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit abb1367e9942509a0e5e30df5451a5cfe07a415e
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Thu Apr 23 23:17:38 2009 -0400
+
+    [git.mk] Replace "git stat" with "git status"
+
+    Apparently "stat" was aliased by me locally.
+
+ git.mk |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 37baf42b1b74884156162c317a6604951e4f2d19
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Tue Apr 21 15:15:08 2009 -0400
+
+    Bug 579694 – Cygwin parallel-build patch
+
+    Fix build on Cygwin.
+
+ pango-view/Makefile.am |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 049634718ff06752eb2722449a358a8248bcdea9
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sun Apr 19 15:35:33 2009 -0400
+
+    [DOAP] Add category
+
+ pango.doap |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 4ad7bc1ece28204a528561fa383ffc4664c5c578
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sat Apr 18 16:19:24 2009 -0400
+
+    [git.mk] Support out-of-tree builds
+
+ git.mk |   14 +++++++++-----
+ 1 files changed, 9 insertions(+), 5 deletions(-)
+
+commit d0830820f84eb28a27502306b6acbf0f2b57fc7d
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sat Apr 18 15:04:41 2009 -0400
+
+    [git.mk] Remove copyright claim
+
+ git.mk |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit f88ab902430d3c01a83b980bf723058507c08d1f
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Fri Apr 17 23:22:08 2009 -0400
+
+    [Makefile.am] Minor cleanup
+
+ Makefile.am |    5 ++++-
+ 1 files changed, 4 insertions(+), 1 deletions(-)
+
+commit 0564202a417e3d8eb6aad2c93c6d5e716f967549
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Fri Apr 17 21:37:53 2009 -0400
+
+    [git.mk] Add gnome-doc-utils support
+
+ Makefile.am |    1 +
+ git.mk      |   23 ++++++++++++++++++++---
+ 2 files changed, 21 insertions(+), 3 deletions(-)
+
+commit 43e7787c1497fec5addc5db5bf5c29ed2191cf74
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Fri Apr 17 21:11:37 2009 -0400
+
+    [git.mk] Document more
+
+ git.mk |  107
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++------------
+ 1 files changed, 87 insertions(+), 20 deletions(-)
+
+commit 133839d1d7ae77cfc80638a3a29187794f87dddf
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Fri Apr 17 17:55:39 2009 -0400
+
+    [git.mk] Document
+
+ Makefile.am |    3 +++
+ git.mk      |   22 ++++++++++++++++++++--
+ 2 files changed, 23 insertions(+), 2 deletions(-)
+
+commit d71b8b4c90fdce60ee3a5d3494c6ef589b120613
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Fri Apr 17 17:27:03 2009 -0400
+
+    [docs] Fix Makefile.am to not delete .gitignore on dist
+
+ docs/Makefile.am |    5 ++++-
+ 1 files changed, 4 insertions(+), 1 deletions(-)
+
+commit 137f858f17f680e2487bf4614a33c411c69469c7
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Fri Apr 17 17:24:02 2009 -0400
+
+    [doc] Update templates
+
+ docs/tmpl/pangofc-font.sgml |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+commit 1140637cc765e449d381ae2d3a2ef6e3c9a98334
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Fri Apr 17 17:03:39 2009 -0400
+
+    Use git.mk
+
+ Makefile.am                    |    2 ++
+ docs/Makefile.am               |    2 ++
+ examples/Makefile.am           |    2 ++
+ modules/Makefile.am            |    2 ++
+ modules/arabic/Makefile.am     |    2 ++
+ modules/basic/Makefile.am      |    2 ++
+ modules/hangul/Makefile.am     |    2 ++
+ modules/hebrew/Makefile.am     |    2 ++
+ modules/indic/Makefile.am      |    2 ++
+ modules/khmer/Makefile.am      |    2 ++
+ modules/syriac/Makefile.am     |    2 ++
+ modules/thai/Makefile.am       |    2 ++
+ modules/tibetan/Makefile.am    |    2 ++
+ pango-view/Makefile.am         |    2 ++
+ pango/Makefile.am              |    2 ++
+ pango/mini-fribidi/Makefile.am |    2 ++
+ pango/opentype/Makefile.am     |    2 ++
+ tests/Makefile.am              |    2 ++
+ tools/Makefile.am              |    2 ++
+ 19 files changed, 38 insertions(+), 0 deletions(-)
+
+commit 5016f4caab5ecaa3c6faf46746c19801a72e9f08
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Fri Apr 17 17:03:25 2009 -0400
+
+    Add git.mk
+
+ git.mk |   72
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 72 insertions(+), 0 deletions(-)
+
+commit b712138ad9d1f0eebb5f1ecc48d89ead7abf4a9f
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Fri Apr 17 13:28:56 2009 -0400
+
+    Doap it up
+
+ Makefile.am |    3 ++-
+ pango.doap  |   33 +++++++++++++++++++++++++++++++++
+ 2 files changed, 35 insertions(+), 1 deletions(-)
+
+commit f1bda36443d1759e02a4168563de21f08b39c566
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Tue Apr 14 14:09:42 2009 -0400
+
+    Bug 578944 – pango-1.24.1 fails its testsuite
+
+    Fix doc coverage.
+
+ docs/Makefile.am       |    1 +
+ docs/tmpl/scripts.sgml |    7 -------
+ 2 files changed, 1 insertions(+), 7 deletions(-)
+
+commit 8197b4d1721d905f1cda3207494df525be112f5d
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Tue Apr 14 11:09:41 2009 -0400
+
+    Bug 578935 – Syntax error (missing semicolon) in
+    pango/pangowin32-fontmap.c
+
+    Add missing semicolon.
+
+ NEWS                        |   19 +++++++++++++++++++
+ configure.in                |    4 ++--
+ docs/tmpl/pangofc-font.sgml |    5 -----
+ pango/pangowin32-fontmap.c  |    2 +-
+ 4 files changed, 22 insertions(+), 8 deletions(-)
+
+commit 2fc08eeb9daeabd9fbac1e8ae409581117601bb5
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Thu Apr 9 13:30:26 2009 -0400
+
+    Bug 577952 – Error loading {GDEF,GSUB,GPOS} table 0x6EAD
+
+    Detect TrueType Collections by checking the font data header instead
+    of checking for "face->num_faces >1".
+
+ pango/opentype/harfbuzz-stream.c |   11 +++++++++--
+ 1 files changed, 9 insertions(+), 2 deletions(-)
+
+commit c5921ca904f3ab25f975e4c719c7334a31d84434
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Wed Apr 8 15:47:00 2009 -0400
+
+    [pangofc] Be more tolerant on the "fontmap" property setting
+
+    Bug 578336 – ABI breakage from 1.22 to 1.24 in fontmap field
+    of PangoFcFont
+
+    Commit 9305b9a9995e84ace3818a90346820ef8c47a3ce introduced a "fontmap"
+    property in PangoFcFont and expected all subclasses to set it upon
+    construction.  And PangoFcFontSet was changed to not set
+    fcfont->fontmap
+    anymore.
+
+    Relax this change to make it backward compatible by:
+
+      1) Making "fontmap" property a not-construct-only property
+
+      2) In PangoFcFontSet, set "fontmap" if not already set
+
+    This should make it backward compatible, while allowing new code to
+    set the
+    property instead of relying on PangoFcFontSet to do it.
+
+ pango/pangofc-font.c    |    2 +-
+ pango/pangofc-fontmap.c |    5 +++++
+ 2 files changed, 6 insertions(+), 1 deletions(-)
+
+commit 7a654f4999cdedf71d2c39cfa6ccf6fe2a7a8477
+Author: Peter Clifton <pcjc2@cam.ac.uk>
+Date:   Tue Apr 7 16:21:24 2009 -0400
+
+    [doc] Tag markup attributes with version they were introduced
+
+ docs/pango_markup.sgml |   16 ++++++++--------
+ docs/tmpl/scripts.sgml |    7 +++++++
+ 2 files changed, 15 insertions(+), 8 deletions(-)
+
+commit dd6ce709db5872132335fef9f75aa16a33d6e5aa
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Apr 6 19:49:02 2009 -0400
+
+    [layout] Truncate final whitespace in the line before ellipsizing
+
+    Bug 556132 – gnome-panel crashed with SIGSEGV in
+    g_cclosure_marshal_VOID__BOXED()
+
+    Not after.  Also fixes invalid memory access in case line was both
+    wrapped and ellipsized.
+
+ pango/pango-layout.c |   16 +++++++---------
+ 1 files changed, 7 insertions(+), 9 deletions(-)
+
+commit b6b9a22500c3e760f7c05d6c1fd62ff1529dee1b
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Apr 6 19:47:40 2009 -0400
+
+    [layout] When computing empty line extents, use both layout and
+    context fontdesc
+
+    By merging them.  This is what happens for loading fonts in
+    pango-context.
+    We should do the same or we'll get zero-size fonts if layout has a
+    font desc
+    set with no size.
+
+ pango/pango-layout.c |   23 ++++++++++++++---------
+ 1 files changed, 14 insertions(+), 9 deletions(-)
+
+commit 5ea040faf98de83101d50d1dfa141cdaf0cc5c2f
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Apr 6 19:46:49 2009 -0400
+
+    [layout] Don't break line on LINE_SEPARATOR if the line is to be
+    ellipsized
+
+ pango/pango-layout.c |    9 +++++++--
+ 1 files changed, 7 insertions(+), 2 deletions(-)
+
+commit caabe183c7747d7486695071ab592e677bbdce25
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Apr 6 19:45:04 2009 -0400
+
+    Allow font_family=NULL in load_font() and load_fontset() methods
+
+ pango/pango-context.c      |    5 +----
+ pango/pango-fontmap.c      |    6 +++---
+ pango/pangoatsui-fontmap.c |    5 ++++-
+ pango/pangowin32-fontmap.c |    8 +++++---
+ pango/pangox-fontmap.c     |    4 +++-
+ 5 files changed, 16 insertions(+), 12 deletions(-)
+
+commit 1e990af007255d1137ec76bd86658198d73994c6
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Apr 6 19:43:17 2009 -0400
+
+    [xft,ft2] Fix empty-glyph logical extents
+
+    Previously we were returning zero.  We now return the height of the
+    glyph for space.
+
+ pango/pangoft2.c      |   17 ++++++++++++-----
+ pango/pangoxft-font.c |   23 ++++++++++++++++++-----
+ 2 files changed, 30 insertions(+), 10 deletions(-)
+
+commit e61e53f197bf238269a9db736901e64fd999190a
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Apr 6 19:42:06 2009 -0400
+
+    Allow desc_to_merge=NULL in pango_font_description_merge()
+
+ pango/fonts.c |    8 ++++++--
+ 1 files changed, 6 insertions(+), 2 deletions(-)
+
+commit 3948365307f6b70863d89af7da832b84af72c263
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Apr 6 19:41:32 2009 -0400
+
+    Use g_debug() instead of g_message()
+
+ pango/break.c        |    2 +-
+ pango/pango-layout.c |   10 +++++-----
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+commit fed14242693db7f79c51190698aaf015d0e0a44f
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 30 13:21:23 2009 -0400
+
+    [cairotwisted] Plug couple other leaks
+
+ examples/cairotwisted.c |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+commit 434011df553c8d40c1e6508c9bdea4884e591f97
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 30 13:13:39 2009 -0400
+
+    [cairotwisted] Plug leak
+
+ examples/cairotwisted.c |    6 +++++-
+ 1 files changed, 5 insertions(+), 1 deletions(-)
+
+commit 17ea2edc6defca2862bd45680d80e525998ea738
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Thu Mar 26 01:06:13 2009 -0400
+
+    [indic] Fix build
+
+ modules/indic/indic-ot-class-tables.c |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit cf13cde8a80c9a1a9d4c9e343c634350da59991a
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Thu Mar 26 01:03:43 2009 -0400
+
+    Bug 571291 – Unicode 5.1 support in pango - Indic Lanuages
+
+    Add char class for new characters.
+    Patch from Rahul Bhalerao.
+
+ modules/indic/indic-ot-class-tables.c |   20 +++++++++++---------
+ 1 files changed, 11 insertions(+), 9 deletions(-)
+
+commit 477747bc1ef1078b06c4e1c615a1a912e6ada299
+Author: Sebastian Dröge <slomo@circular-chaos.org>
+Date:   Mon Mar 23 19:16:58 2009 -0400
+
+    Bug 576298 – Fails to link pango-view if --without-x is specified
+    but cairo has X11 support
+
+ pango-view/pango-view.c   |    2 +-
+ pango-view/viewer-cairo.c |    4 ++++
+ 2 files changed, 5 insertions(+), 1 deletions(-)
+
+commit 698203ab28bc679c2e62a2452a79d5785fd46ca7
+Author: Chris Wilson <chris@chris-wilson.co.uk>
+Date:   Wed Mar 18 13:02:13 2009 +0000
+
+    [pango] Allocate PangoScriptIter on stack.
+
+    Move the PangoScriptIter structure definition to a private header
+    file,
+    so that we can embed the iterator within other structures or allocate
+    a local iterator on the stack. This eliminates the frequent
+    short-lived
+    allocations associated with the iterator.
+
+ pango/Makefile.am            |    1 +
+ pango/break.c                |   13 ++++---
+ pango/pango-context.c        |   13 ++++---
+ pango/pango-script-private.h |   56 +++++++++++++++++++++++++++++++++
+ pango/pango-script.c         |   70
+ ++++++++++++++++++------------------------
+ 5 files changed, 101 insertions(+), 52 deletions(-)
+
+commit 3241972c4f4d9c1d98d166c38cb0d7b12afb5545
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Tue Mar 17 12:05:34 2009 -0400
+
+    [pango-context] Fix assertion with enable_fallback=FALSE and no fonts
+
+ pango/pango-context.c |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+commit 7c025dc9d4ef396d991c823ed015c34aaf0eb3ae
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 16 18:34:47 2009 -0400
+
+    Release 1.24.0
+
+ NEWS         |   37 +++++++++++++++++++++++++++++++++++++
+ configure.in |    4 ++--
+ 2 files changed, 39 insertions(+), 2 deletions(-)
+
+commit 4b68c2eb18bafffd2466df30aaf892ec7cd46c9b
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 16 18:08:31 2009 -0400
+
+    Rename ChangeLog.pre-1.23 -> ChangeLog.pre-1-23
+
+ ChangeLog.pre-1-23 | 1858
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ChangeLog.pre-1.23 | 1858
+ ----------------------------------------------------
+ 2 files changed, 1858 insertions(+), 1858 deletions(-)
+
+commit a08ef98448054f28d686d8bba8850e44056e33d7
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 16 18:07:50 2009 -0400
+
+    [Makefile.am] Generage ChangeLog from git-log
+
+ Makefile.am |   17 +++++++++++++++++
+ 1 files changed, 17 insertions(+), 0 deletions(-)
+
+commit c82e8ad9dda142b1acfbcb86054750e082600893
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 16 17:25:33 2009 -0400
+
+    Bug 547963 – man page for pango-view
+
+ pango-view/Makefile.am     |   26 ++++++++++++++++++++++++++
+ pango-view/viewer-main.c   |    1 +
+ pango-view/viewer-render.c |   13 +++++--------
+ 3 files changed, 32 insertions(+), 8 deletions(-)
+
+commit 69e1f7921525c2849d937b5a822475007a4f9a2f
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 16 16:57:58 2009 -0400
+
+    Bug 502804 – pango-view or pangocairo-view option to annotate
+
+    Added --annotate.
+
+    Also fixes:
+    Bug 502801 – per-backend pango-view options
+
+ pango-view/viewer-cairo.c      |    5 +++++
+ pango-view/viewer-cairo.h      |    2 ++
+ pango-view/viewer-pangocairo.c |   33 +++++++++++++++++++++++++++++++--
+ pango-view/viewer-render.c     |   15 ++++++++++++---
+ pango-view/viewer.h            |    1 +
+ 5 files changed, 51 insertions(+), 5 deletions(-)
+
+commit 56ff9ed93d1cc9fd091da609304bd153d706d818
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 16 16:33:48 2009 -0400
+
+    [pango-view] Add an extra level of mild annotation to cairo backend
+
+ pango-view/viewer-main.c       |    2 +-
+ pango-view/viewer-pangocairo.c |  133
+ ++++++++++++++++++++-------------------
+ pango-view/viewer-x.c          |   15 ++---
+ 3 files changed, 74 insertions(+), 76 deletions(-)
+
+commit c4f9a30634779bc985a470df2bc9f7e4fa0e6ad0
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 16 16:32:02 2009 -0400
+
+    [pango-view] Clear background in _render
+
+ pango-view/viewer-cairo.c    |   90
+ ++++++++++++++++++++++++++----------------
+ pango-view/viewer-pangoxft.c |   21 ++++------
+ pango-view/viewer-x.c        |    8 ----
+ 3 files changed, 65 insertions(+), 54 deletions(-)
+
+commit a6af36b9c06b81ab8095afff85f68f37c27a4b3b
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 16 16:03:36 2009 -0400
+
+    Bug 502805 – pango-view option for foreground/background color
+
+ pango-view/viewer-cairo.c      |   58 +++++++++++++++++-------
+ pango-view/viewer-cairo.h      |    3 +
+ pango-view/viewer-pangocairo.c |   13 +++++-
+ pango-view/viewer-pangoxft.c   |   26 +++++++----
+ pango-view/viewer-render.c     |   97
+ +++++++++++++++++++++++++++++++++++++++-
+ pango-view/viewer-render.h     |    7 +++-
+ pango-view/viewer-x.c          |    8 +++
+ 7 files changed, 182 insertions(+), 30 deletions(-)
+
+commit 2599e265eba6fd27b3f7684c484f3160f9a67595
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Mon Mar 16 11:23:22 2009 -0400
+
+    [configure.in] Look for pango.pc.in instead of ChangeLog
+
+ configure.in |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 4eb4cf81312691516c2129f04f245401b5566235
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sun Mar 15 15:50:13 2009 -0400
+
+    [pango-view] Don't clear the background for vector output
+
+ pango-view/viewer-cairo.c      |   28 ++++++++++++++++++++++++----
+ pango-view/viewer-pangocairo.c |    3 ---
+ 2 files changed, 24 insertions(+), 7 deletions(-)
+
+commit a3e3ba07b6da4bacb85ae6874cab10286d239903
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sun Mar 15 14:31:28 2009 -0400
+
+    [pango-view] Add ability to save to PS, EPS, PDF, and SVG
+
+ pango-view/viewer-cairo.c      |  192
+ +++++++++++++++++++++++++++++++++++++---
+ pango-view/viewer-cairo.h      |    2 +-
+ pango-view/viewer-pangocairo.c |    3 +-
+ 3 files changed, 183 insertions(+), 14 deletions(-)
+
+commit a4e47759bab59ce5b71a316dc4075c27eeece1e4
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sun Mar 15 13:16:50 2009 -0400
+
+    [pango-view] Make the cairo backend save png natively
+
+ pango-view/viewer-pangocairo.c |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit a08cd2843ea38b142d375a15a08520c8758cd4ba
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sun Mar 15 13:13:03 2009 -0400
+
+    [Makefile.am] Cleanup
+
+ pango-view/Makefile.am |   18 +++++-------------
+ 1 files changed, 5 insertions(+), 13 deletions(-)
+
+commit 9644e56231280151803e0bdbee7141507a6b899f
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sun Mar 15 13:08:36 2009 -0400
+
+    Red Hat Bug 490331 -  Crash of galeon in libpango
+
+    Don't crash when no fonts installed.
+
+ pango/pangofc-fontmap.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit df05d117a5c168fb90138d7d6bae760c1b2851af
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sat Mar 14 21:33:07 2009 -0400
+
+    Bug 523166 – pango-view opens display even when invoked with -q
+
+    Works now.
+
+ pango-view/viewer-cairo.c      |   85
+ ++++++++++++++++++++++++++++++++++++----
+ pango-view/viewer-cairo.h      |    2 +-
+ pango-view/viewer-main.c       |   12 +++++-
+ pango-view/viewer-pangocairo.c |    6 ++-
+ pango-view/viewer-x.c          |    4 +-
+ pango-view/viewer.h            |    1 -
+ 6 files changed, 93 insertions(+), 17 deletions(-)
+
+commit 3310b979c486e38182d89132d6b6b3e3d7ffb728
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sat Mar 14 20:50:29 2009 -0400
+
+    [pango-view] Don't set metrics-hinting, fallback to surface default
+
+ pango-view/viewer-pangocairo.c |    2 --
+ 1 files changed, 0 insertions(+), 2 deletions(-)
+
+commit 5ca1d5b3373e6a2c2c69829a9ffd2a515d64e860
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sat Mar 14 19:25:48 2009 -0400
+
+    [pango-view] Remove per-backend binaries
+
+ pango-view/Makefile.am       |   97
+ ------------------------------------------
+ pango-view/pangocairo-view.c |    8 ---
+ pango-view/pangoft2-view.c   |    8 ---
+ pango-view/pangox-view.c     |    8 ---
+ pango-view/pangoxft-view.c   |    8 ---
+ 5 files changed, 0 insertions(+), 129 deletions(-)
+
+commit f4508bc989919842e8df3ff5b9aeeffece29571c
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sat Mar 14 19:01:16 2009 -0400
+
+    Rebuild pango-script-lang-table.h with fontconfig-2.6.99.behdad
+
+ pango/pango-script-lang-table.h |  434
+ ++++++++++++++++++++++-----------------
+ 1 files changed, 241 insertions(+), 193 deletions(-)
+
+commit 46c65d090998b27a25ee89d36d444d645640934e
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Sat Mar 14 19:00:54 2009 -0400
+
+    [Makefile.am] Fix build of gen-script-for-lang
+
+ tools/Makefile.am |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 04138218a9b515244f02202c5b18103e84e33d9e
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Thu Mar 12 14:43:54 2009 -0400
+
+    [pangofc-fontmap] Document the caching structure
+
+ pango/pangofc-fontmap.c |   54
+ +++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 54 insertions(+), 0 deletions(-)
+
+commit 03a13541fbf3f49c21d73490570ca217f559acbb
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Tue Mar 10 17:13:36 2009 -0400
+
+    [pangofc] Share cmap cache between PangoFcFont's of the same face
+    (#567160)
+
+ pango/pangofc-font.c    |   41 ++++--------
+ pango/pangofc-fontmap.c |  172
+ ++++++++++++++++++++++++++++++++--------------
+ pango/pangofc-private.h |   26 +++++++
+ 3 files changed, 158 insertions(+), 81 deletions(-)
+
+commit c84d4e6e068d802cd0fe2b23bee4c611ae9ef89f
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Tue Mar 10 14:00:09 2009 -0400
+
+    [pangofc] Reuse filename from pattern in coverage key
+
+ pango/pangofc-fontmap.c |   28 ++++++++++++++++++++--------
+ 1 files changed, 20 insertions(+), 8 deletions(-)
+
+commit 9305b9a9995e84ace3818a90346820ef8c47a3ce
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:   Tue Mar 10 08:08:19 2009 -0400
+
+    [pangofc] Add a "fontmap" property to PangoFcFont
+
+    Gecko uses its own PangoFcFontMap subclass with its own PangoFontSet.
+    Previously we were setting font->fontmap in our own private
+    PangoFcFontSet.  Now it's up to the PangoFcFont subclass to set it
+    when creating the new font object.
+
+    Also adds the following backend-public symbol:
+
+	pango_fc_font_map_find_decoder()
+
+ docs/pango-sections.txt	|    1 +
+ docs/tmpl/pangofc-font.sgml	|    5 +++
+ docs/tmpl/pangofc-fontmap.sgml |   10 +++++
+ pango/pangocairo-fcfont.c	|    1 +
+ pango/pangofc-font.c		|   42 +++++++++++++++++++--
+ pango/pangofc-fontmap.c	|   79
+ +++++++++++++++++++++++++---------------
+ pango/pangofc-fontmap.h	|    2 +
+ pango/pangoft2.c		|    1 +
+ pango/pangoft2.def		|    1 +
+ pango/pangoxft-font.c		|    1 +
+ 10 files changed, 109 insertions(+), 34 deletions(-)
+
+commit ed941ddf131cbdd8f5e1e1efabd6e92c37010735
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Tue Mar 10 11:42:01 2009 -0400
+
+    [pango-coverage] Fix optimization bug in pango_coverage_to_bytes()
+
+ pango/pango-coverage.c |   19 +++++++++++--------
+ 1 files changed, 11 insertions(+), 8 deletions(-)
+
+commit fa908f4cb6db943b555a51d1ce4bf01112b1a710
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Tue Mar 10 09:05:39 2009 -0400
+
+    [pango-coverage] Use gslice for data arrays
+
+ pango/pango-coverage.c |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit b22da261e98702b95db83cd96175d0d655dc0df4
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Tue Mar 10 08:26:20 2009 -0400
+
+    [pango-coverage] Remove unused struct member
+
+ pango/pango-coverage.c |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+commit e3cff8e0bb2926b2db1687182fab587ade7b64ee
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Wed Mar 4 14:16:25 2009 +0330
+
+    Increase FONTSET_CACHE_SIZE from 64 to 256
+
+    Now that we keep a lot fewer objects per fontset, increase the
+    cache size.
+
+ pango/pangofc-fontmap.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 5861e2609ded6495ebfd4110c4fc8f07ba32ebca
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Tue Mar 3 01:30:03 2009 +0330
+
+    [pangofc-fontmap] Don't unref NULL object (RH bug# 487593)
+
+ pango/pangofc-fontmap.c |    6 +++++-
+ 1 files changed, 5 insertions(+), 1 deletions(-)
+
+commit a45933e695a6a60ebae63b30b5a021859cb85305
+Author: Tor Lillqvist <tml@iki.fi>
+Date:	Mon Mar 9 14:21:49 2009 +0200
+
+    Revert change from 2008-05-28 that mapped words and word pairs that
+    indicate weight or stretch into the corrersponding Pango font
+    description setting and stripped those word(s) from the family name.
+
+    Personally I liked the effect this had on the GTK+ font picker,
+    combining all weight and stretch variants of what de facto is one
+    typeface family (for instance DejaVu) under one family name. But Bulia
+    Byak reported that this caused regressions in Inkscape. So OK then.
+
+ pango/pangowin32-fontmap.c |  100
+ +-------------------------------------------
+ 1 files changed, 2 insertions(+), 98 deletions(-)
+
+commit fab7a104d5c6f3182fe9bdc84bfcba5807f87f8a
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Mon Mar 2 15:16:11 2009 +0330
+
+    [opentype] Protect against illegal access for arrays of length zero
+
+ pango/opentype/harfbuzz-gpos.c |   22 ++++++++++++++++++----
+ pango/opentype/harfbuzz-gsub.c |    6 ++++++
+ 2 files changed, 24 insertions(+), 4 deletions(-)
+
+commit caaa5d09e10d4fe01ef986c9a95826c3cbb13cfa
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Mon Mar 2 14:20:20 2009 +0330
+
+    [opentype] Use size_t instead of uint for malloc wrappers
+
+ pango/opentype/harfbuzz-impl.c |    4 ++--
+ pango/opentype/harfbuzz-impl.h |    6 ++++--
+ 2 files changed, 6 insertions(+), 4 deletions(-)
+
+commit 4de30e5500eaeb49f4bf0b7a07f718e149a2ed5e
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Mon Mar 2 12:00:52 2009 +0330
+
+    [glyphstring] Handle overflow with very long glyphstrings
+
+ pango/glyphstring.c |	 26 ++++++++++++++++++++------
+ 1 files changed, 20 insertions(+), 6 deletions(-)
+
+commit 1c9433bfe43890b102c8cead8ab3ee34b44c5c37
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Mon Mar 2 11:17:24 2009 +0330
+
+    [pango-language] Fix small leak
+
+    Reported by Tommi Rantala.
+
+ pango/pango-language.c |    6 ++++--
+ 1 files changed, 4 insertions(+), 2 deletions(-)
+
+commit 7245e427818d88358f2c9fcfdbe777701d7b0ab9
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Mon Mar 2 11:12:43 2009 +0330
+
+    Bug 572662 – Remove deprecated GTK+ symbols
+
+    Remove the obsolete file viewer-win32.c
+
+ pango-view/Makefile.am    |	1 -
+ pango-view/viewer-win32.c |  748
+ ---------------------------------------------
+ 2 files changed, 0 insertions(+), 749 deletions(-)
+
+commit e2f1e870a164dfe855542520c38b5d0b5758d433
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Mon Mar 2 11:11:09 2009 +0330
+
+    Rename ChangeLog to ChangeLog.pre-1.23
+
+ ChangeLog	    | 1858
+ ----------------------------------------------------
+ ChangeLog.pre-1.23 | 1858
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Makefile.am	    |	 1 +
+ 3 files changed, 1859 insertions(+), 1858 deletions(-)
+
+commit 0586fb02661f1a8465ae94cd736d98200da7b147
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Mon Mar 2 11:09:29 2009 +0330
+
+    Fix Bug 572529 – Poor -I ordering can break build
+
+ pango/opentype/Makefile.am |	 4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 44c9dd3d4c17776240a2bd7bdee93b5455ab76d5
+Author: Behdad Esfahbod <behdad@behdad.org>
+Date:	Fri Feb 6 19:23:48 2009 -0500
+
+    Fix warnings
+
+ tests/gen-all-unicode.c |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+commit d17a99734b13e3ea4886177c704d54fbb634a0f7
+Author: Behdad Esfahbod <behdad@src.gnome.org>
+Date:	Tue Feb 3 05:49:01 2009 +0000
+
+    Fix check.
+
+    svn path=/trunk/; revision=2829
+
+ pango/pangoft2.def |	 6 ++++++
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+
+commit 400b54870729c2afe49d1aec2b43b2678e0d0844
+Author: Behdad Esfahbod <behdad@gnome.org>
+Date:	Tue Feb 3 05:34:15 2009 +0000
+
+    === Released 1.23.0 ===
+
+    2009-02-03	Behdad Esfahbod  <behdad@gnome.org>
+
+	    * === Released 1.23.0 ===
+
+	    * configure.in: Version 1.23.0
+
+	    * NEWS: Updated.
+
+    svn path=/trunk/; revision=2828
+
+ ChangeLog |	8 ++++++++
+ NEWS	   |   54 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 62 insertions(+), 0 deletions(-)

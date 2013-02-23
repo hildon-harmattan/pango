@@ -1,0 +1,33 @@
+# Pango Modules file
+# Automatically generated file, do not edit
+#
+/home/qwazix/cordia/pango-1.24.2/modules/./hebrew/pango-hebrew-fc.la HebrewScriptEngineFc PangoEngineShape PangoRenderFc hebrew:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-lang.la devaIndicScriptEngineLang PangoEngineLang PangoRenderNone devanagari:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-lang.la bengIndicScriptEngineLang PangoEngineLang PangoRenderNone bengali:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-lang.la guruIndicScriptEngineLang PangoEngineLang PangoRenderNone gurmukhi:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-lang.la gujrIndicScriptEngineLang PangoEngineLang PangoRenderNone gujarati:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-lang.la oryaIndicScriptEngineLang PangoEngineLang PangoRenderNone oriya:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-lang.la tamlIndicScriptEngineLang PangoEngineLang PangoRenderNone tamil:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-lang.la teluIndicScriptEngineLang PangoEngineLang PangoRenderNone telugu:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-lang.la kndaIndicScriptEngineLang PangoEngineLang PangoRenderNone kannada:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-lang.la mlymIndicScriptEngineLang PangoEngineLang PangoRenderNone malayalam:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-lang.la sinhIndicScriptEngineLang PangoEngineLang PangoRenderNone sinhala:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-fc.la devaScriptEngineFc PangoEngineShape PangoRenderFc devanagari:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-fc.la bengScriptEngineFc PangoEngineShape PangoRenderFc bengali:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-fc.la guruScriptEngineFc PangoEngineShape PangoRenderFc gurmukhi:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-fc.la gujrScriptEngineFc PangoEngineShape PangoRenderFc gujarati:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-fc.la oryaScriptEngineFc PangoEngineShape PangoRenderFc oriya:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-fc.la tamlScriptEngineFc PangoEngineShape PangoRenderFc tamil:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-fc.la teluScriptEngineFc PangoEngineShape PangoRenderFc telugu:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-fc.la kndaScriptEngineFc PangoEngineShape PangoRenderFc kannada:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-fc.la mlymScriptEngineFc PangoEngineShape PangoRenderFc malayalam:*
+/home/qwazix/cordia/pango-1.24.2/modules/./indic/pango-indic-fc.la sinhScriptEngineFc PangoEngineShape PangoRenderFc sinhala:*
+/home/qwazix/cordia/pango-1.24.2/modules/./syriac/pango-syriac-fc.la SyriacScriptEngineFc PangoEngineShape PangoRenderFc syriac:*
+/home/qwazix/cordia/pango-1.24.2/modules/./hangul/pango-hangul-fc.la HangulScriptEngineFc PangoEngineShape PangoRenderFc hangul:*
+/home/qwazix/cordia/pango-1.24.2/modules/./arabic/pango-arabic-lang.la ArabicScriptEngineLang PangoEngineLang PangoRenderNone arabic:*
+/home/qwazix/cordia/pango-1.24.2/modules/./arabic/pango-arabic-fc.la ArabicScriptEngineFc PangoEngineShape PangoRenderFc arabic:* nko:*
+/home/qwazix/cordia/pango-1.24.2/modules/./basic/pango-basic-fc.la BasicScriptEngineFc PangoEngineShape PangoRenderFc latin:* cyrillic:* greek:* armenian:* georgian:* runic:* ogham:* bopomofo:* cherokee:* coptic:* deseret:* ethiopic:* gothic:* han:* hiragana:* katakana:* old-italic:* canadian-aboriginal:* yi:* braille:* cypriot:* limbu:* osmanya:* shavian:* linear-b:* ugaritic:* glagolitic:* cuneiform:* phoenician:* common:
+/home/qwazix/cordia/pango-1.24.2/modules/./basic/pango-basic-x.la BasicScriptEngineX PangoEngineShape PangoRenderX common:
+/home/qwazix/cordia/pango-1.24.2/modules/./khmer/pango-khmer-fc.la KhmerScriptEngineFc PangoEngineShape PangoRenderFc khmer:*
+/home/qwazix/cordia/pango-1.24.2/modules/./tibetan/pango-tibetan-fc.la TibetanScriptEngineFc PangoEngineShape PangoRenderFc tibetan:*
+/home/qwazix/cordia/pango-1.24.2/modules/./thai/pango-thai-fc.la ThaiScriptEngineFc PangoEngineShape PangoRenderFc thai:* lao:*

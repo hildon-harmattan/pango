@@ -1,0 +1,156 @@
+harfbuzz-dump-main.o: harfbuzz-dump-main.c /usr/include/stdio.h \
+ /usr/include/features.h /usr/include/bits/predefs.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h \
+ /scratchbox/compilers/cs2009q3-eglibc2.10-armv7-hard/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /scratchbox/compilers/cs2009q3-eglibc2.10-armv7-hard/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/stdlib.h /usr/include/sys/types.h \
+ /usr/include/time.h /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h harfbuzz.h \
+ harfbuzz-global.h /usr/include/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/freetype/freetype.h \
+ /usr/include/freetype2/freetype/config/ftconfig.h \
+ /usr/include/freetype2/freetype/config/ftoption.h \
+ /usr/include/freetype2/freetype/config/ftstdlib.h /usr/include/limits.h \
+ /scratchbox/compilers/cs2009q3-eglibc2.10-armv7-hard/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include-fixed/limits.h \
+ /usr/include/bits/posix1_lim.h /usr/include/bits/local_lim.h \
+ /usr/include/linux/limits.h /usr/include/bits/posix2_lim.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/bits/string.h \
+ /usr/include/bits/string2.h /usr/include/setjmp.h \
+ /usr/include/bits/setjmp.h /usr/include/freetype2/freetype/fterrors.h \
+ /usr/include/freetype2/freetype/ftmoderr.h \
+ /usr/include/freetype2/freetype/fterrdef.h \
+ /usr/include/freetype2/freetype/fttypes.h \
+ /usr/include/freetype2/freetype/ftsystem.h \
+ /usr/include/freetype2/freetype/ftimage.h harfbuzz-buffer.h \
+ harfbuzz-gdef.h harfbuzz-open.h harfbuzz-gsub.h harfbuzz-gpos.h \
+ harfbuzz-dump.h
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/predefs.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/scratchbox/compilers/cs2009q3-eglibc2.10-armv7-hard/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/scratchbox/compilers/cs2009q3-eglibc2.10-armv7-hard/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+harfbuzz.h:
+
+harfbuzz-global.h:
+
+/usr/include/ft2build.h:
+
+/usr/include/freetype2/freetype/config/ftheader.h:
+
+/usr/include/freetype2/freetype/freetype.h:
+
+/usr/include/freetype2/freetype/config/ftconfig.h:
+
+/usr/include/freetype2/freetype/config/ftoption.h:
+
+/usr/include/freetype2/freetype/config/ftstdlib.h:
+
+/usr/include/limits.h:
+
+/scratchbox/compilers/cs2009q3-eglibc2.10-armv7-hard/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include-fixed/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/setjmp.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/freetype2/freetype/fterrors.h:
+
+/usr/include/freetype2/freetype/ftmoderr.h:
+
+/usr/include/freetype2/freetype/fterrdef.h:
+
+/usr/include/freetype2/freetype/fttypes.h:
+
+/usr/include/freetype2/freetype/ftsystem.h:
+
+/usr/include/freetype2/freetype/ftimage.h:
+
+harfbuzz-buffer.h:
+
+harfbuzz-gdef.h:
+
+harfbuzz-open.h:
+
+harfbuzz-gsub.h:
+
+harfbuzz-gpos.h:
+
+harfbuzz-dump.h:
